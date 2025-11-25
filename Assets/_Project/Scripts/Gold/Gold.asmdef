@@ -1,0 +1,8 @@
+{
+    "name": "Gold",
+    "references": [
+        "Core"
+    ],
+    "includePlatforms": [],
+    "autoReferenced": true
+}

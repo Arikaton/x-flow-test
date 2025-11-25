@@ -1,0 +1,8 @@
+{
+    "name": "VIP",
+    "references": [
+        "Core"
+    ],
+    "includePlatforms": [],
+    "autoReferenced": true
+}

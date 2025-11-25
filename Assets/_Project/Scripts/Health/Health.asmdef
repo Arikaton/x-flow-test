@@ -1,0 +1,8 @@
+{
+    "name": "Health",
+    "references": [
+        "Core"
+    ],
+    "includePlatforms": [],
+    "autoReferenced": true
+}
