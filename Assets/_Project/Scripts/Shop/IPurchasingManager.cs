@@ -9,6 +9,5 @@ namespace Shop
         bool IsProcessing { get; }
         bool CanPurchase(BundleSo bundle);
         void Purchase(BundleSo bundle);
-        void ApplyPurchase(BundleSo bundle);
     }
 }

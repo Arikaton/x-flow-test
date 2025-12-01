@@ -16,7 +16,6 @@ namespace Shop
             detailCardView.BundleCardView.SetInfoVisible(false);
             detailCardView.BackButtonClicked += OnBackButtonClicked;
 
-            detailCardView.BundleCardView.SetProcessingInProgress(purchasingManager.IsProcessing);
             UpdateInteractable();
         }
 
