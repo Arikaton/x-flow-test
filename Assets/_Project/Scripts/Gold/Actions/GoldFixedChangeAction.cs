@@ -1,7 +1,7 @@
 using Core;
 using UnityEngine;
 
-namespace GoldDomain.Actions
+namespace Gold.Actions
 {
     [CreateAssetMenu(fileName = "GoldFixedChangeAction", menuName = "Gold/Fixed Change Action")]
     public class GoldFixedChangeAction : ActionSo

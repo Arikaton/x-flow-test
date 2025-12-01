@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc02780fd3b04be6b4112437f0469c5b, type: 3}
+  m_Name: Shop Config
+  m_EditorClassIdentifier: Shop::ShopDomain.ShopConfigSo
+  _bundles:
+  - {fileID: 11400000, guid: 133c3fbc5e12cd7438098ce1bfb7b385, type: 2}
+  - {fileID: 11400000, guid: 39c37a66e0cb5924fafa91a63947ffbc, type: 2}
+  - {fileID: 11400000, guid: 0095447466338774cae4f25be0115ffc, type: 2}
+  - {fileID: 11400000, guid: e23fe924e303d6d44a4ee901c1247049, type: 2}
+  _goldToAdd: 100
+  _healthToAdd: 10
+  _defaultLocation: StartVillage
+  _vipSecondsToAdd: 10

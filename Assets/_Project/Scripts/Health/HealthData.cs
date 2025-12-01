@@ -1,4 +1,4 @@
-namespace HealthDomain
+namespace Health
 {
     internal class HealthData
     {

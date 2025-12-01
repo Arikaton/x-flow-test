@@ -1,7 +1,7 @@
 using Core;
 using UnityEngine;
 
-namespace VipDomain.Actions
+namespace Vip.Actions
 {
     [CreateAssetMenu(fileName = "VipTimeChangeAction", menuName = "VIP/Time Change Action")]
     public class VipTimeChangeAction : ActionSo

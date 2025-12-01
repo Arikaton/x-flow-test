@@ -1,8 +1,16 @@
 {
     "name": "Location",
+    "rootNamespace": "Location",
     "references": [
-        "Core"
+        "GUID:17dda1f37f36a4942bebdf7c58bf74b3"
     ],
     "includePlatforms": [],
-    "autoReferenced": true
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

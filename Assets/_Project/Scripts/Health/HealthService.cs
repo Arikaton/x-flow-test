@@ -2,7 +2,7 @@ using System;
 using Core;
 using UnityEngine;
 
-namespace HealthDomain
+namespace Health
 {
     public class HealthService
     {

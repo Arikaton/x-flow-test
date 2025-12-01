@@ -1,7 +1,7 @@
 using Core;
 using UnityEngine;
 
-namespace HealthDomain.Actions
+namespace Health.Actions
 {
     [CreateAssetMenu(fileName = "HealthFixedChangeAction", menuName = "Health/Fixed Change Action")]
     public class HealthFixedChangeAction : ActionSo

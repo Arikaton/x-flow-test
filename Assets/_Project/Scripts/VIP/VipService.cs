@@ -1,7 +1,7 @@
 using Core;
 using System;
 
-namespace VipDomain
+namespace Vip
 {
     public class VipService
     {

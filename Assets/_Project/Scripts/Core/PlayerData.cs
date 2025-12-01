@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Core
 {
-    public class PlayerData
+    public sealed class PlayerData
     {
         private static PlayerData _instance;
 

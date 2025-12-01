@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ec3925dc3adfe48a73fbecff2bfab9, type: 3}
+  m_Name: Bundle_All_For_Nothing
+  m_EditorClassIdentifier: Shop::Shop.BundleSo
+  _bundleName: "\u0425\u0430\u043B\u044F\u0432\u0430"
+  _costs: []
+  _rewards:
+  - {fileID: 11400000, guid: 4d4418c0df638d6489a9e110033dc3d0, type: 2}
+  - {fileID: 11400000, guid: ad69a22c5f439b34086a83d1f831c4c2, type: 2}
+  - {fileID: 11400000, guid: 209d37385ea5bc94c8ef1652ad0b4133, type: 2}
+  - {fileID: 11400000, guid: 058b3d6d90ee2564dbdb0dd890a25cfb, type: 2}

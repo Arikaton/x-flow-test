@@ -1,7 +1,7 @@
 using Core;
 using UnityEngine;
 
-namespace HealthDomain.Actions
+namespace Health.Actions
 {
     [CreateAssetMenu(fileName = "HealthPercentageChangeAction", menuName = "Health/Percentage Change Action")]
     public class HealthPercentageChangeAction : ActionSo

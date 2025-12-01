@@ -1,4 +1,4 @@
-﻿namespace ShopDomain
+﻿namespace Shop
 {
     public static class ShopConstants
     {

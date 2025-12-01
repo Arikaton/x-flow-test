@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881e373b00f5fe74aa752dd0041126ac, type: 3}
   m_Name: Health_Take_1
   m_EditorClassIdentifier: Health::HealthDomain.Actions.HealthFixedChangeAction
-  amount: 1
+  _amount: -1

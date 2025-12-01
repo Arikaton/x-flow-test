@@ -1,13 +1,13 @@
 {
     "name": "Shop",
-    "rootNamespace": "",
+    "rootNamespace": "Shop",
     "references": [
-        "Core",
-        "Health",
-        "Gold",
-        "Location",
-        "VIP",
-        "Unity.TextMeshPro"
+        "GUID:17dda1f37f36a4942bebdf7c58bf74b3",
+        "GUID:13daa9fc781e3774aac0ea346f247437",
+        "GUID:89f685f6e42966c4dadefd6a04f74507",
+        "GUID:a69985d2851b6424aa36465f89ed3ad8",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:0ed5ed6b11285084cb03bad65a51f7b4"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

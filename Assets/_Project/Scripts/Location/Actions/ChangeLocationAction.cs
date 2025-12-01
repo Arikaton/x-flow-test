@@ -1,7 +1,7 @@
 using Core;
 using UnityEngine;
 
-namespace LocationDomain.Actions
+namespace Location.Actions
 {
     [CreateAssetMenu(fileName = "ChangeLocationAction", menuName = "Location/Change Location Action")]
     public class ChangeLocationAction : ActionSo

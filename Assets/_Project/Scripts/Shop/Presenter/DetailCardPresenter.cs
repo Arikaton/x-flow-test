@@ -1,0 +1,28 @@
+using Shop.View;
+
+namespace Shop
+{
+    public class DetailCardPresenter : BaseCardPresenter
+    {
+        private readonly ShopService _shopService;
+
+        public DetailCardPresenter(
+            ShopService shopService,
+            IDetailCardView detailCardView,
+            BundleSo bundle,
+            PurchasingManager purchasingManager) : base(detailCardView.BundleCardView, bundle, purchasingManager)
+        {
+            _shopService = shopService;
+            detailCardView.BundleCardView.SetInfoVisible(false);
+            detailCardView.BackButtonClicked += OnBackButtonClicked;
+
+            detailCardView.BundleCardView.SetProcessingInProgress(purchasingManager.IsProcessing);
+            UpdateInteractable();
+        }
+
+        private void OnBackButtonClicked()
+        {
+            _shopService.CloseDetailScene();
+        }
+    }
+}

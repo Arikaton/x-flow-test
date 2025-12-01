@@ -1,7 +1,7 @@
 using System;
 using Core;
 
-namespace GoldDomain
+namespace Gold
 {
     public class GoldService
     {

@@ -1,6 +1,6 @@
-namespace VipDomain
+namespace Vip
 {
-    public class VipData
+    internal class VipData
     {
         public double VipSeconds;
     }

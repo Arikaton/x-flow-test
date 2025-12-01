@@ -1,4 +1,4 @@
-namespace GoldDomain
+namespace Gold
 {
     internal class GoldData
     {

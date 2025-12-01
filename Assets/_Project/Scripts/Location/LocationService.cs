@@ -1,7 +1,7 @@
 using System;
 using Core;
 
-namespace LocationDomain
+namespace Location
 {
     public class LocationService
     {

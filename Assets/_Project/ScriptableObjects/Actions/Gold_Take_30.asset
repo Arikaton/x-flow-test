@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f063e8cadee89f49bcb859caec9d1e5, type: 3}
   m_Name: Gold_Take_30
   m_EditorClassIdentifier: Gold::GoldDomain.Actions.GoldFixedChangeAction
-  amount: -30
+  _amount: -30

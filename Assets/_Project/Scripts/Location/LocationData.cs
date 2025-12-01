@@ -1,7 +1,7 @@
-namespace LocationDomain
+namespace Location
 {
     internal class LocationData
     {
-        public string CurrentLocation;
+        public string CurrentLocation = "Starting Point";
     }
 }

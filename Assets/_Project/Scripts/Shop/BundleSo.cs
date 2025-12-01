@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-namespace ShopDomain
+namespace Shop
 {
-    [CreateAssetMenu(fileName = "Bundle", menuName = "Shop/Bundle", order = 0)]
+    [CreateAssetMenu(fileName = "Bundle", menuName = "Shop/Bundle")]
     public class BundleSo : ScriptableObject
     {
         [SerializeField]

@@ -1,22 +1,24 @@
 using System;
 using System.Collections.Generic;
-using ShopDomain.View;
-using UnityEngine;
+using Shop.View;
 
-namespace ShopDomain
+namespace Shop
 {
     public class ShopPresenter
     {
+        public event Action<BundleSo> BundleInfoClicked;
+
         private readonly IShopView _view;
-        private readonly ShopService _shopService;
-        private readonly List<BundleCardPresenter> _cardPresenters = new List<BundleCardPresenter>();
+        private readonly PurchasingManager _purchasingManager;
+        private readonly List<BundleSo> _bundles;
+        private readonly List<BaseCardPresenter> _cardPresenters = new List<BaseCardPresenter>();
 
-        public event Action<BundleCardPresenter> OnShowBundleDetail;
-
-        public ShopPresenter(IShopView view, ShopService shopService)
+        public ShopPresenter(IShopView view, List<BundleSo> bundles, PurchasingManager purchasingManager)
         {
+            _bundles = bundles;
             _view = view;
-            _shopService = shopService;
+            _purchasingManager = purchasingManager;
+
             BuildCards();
         }
 
@@ -25,24 +27,25 @@ namespace ShopDomain
             _view.ClearCards();
             _cardPresenters.Clear();
 
-            foreach (var bundle in _shopService.Bundles) {
+            foreach (var bundle in _bundles) {
                 var cardView = _view.CreateCardView();
-                var presenter = new BundleCardPresenter(cardView, bundle, _shopService);
-                presenter.OnInfoRequested += HandleInfoRequested;
+                var presenter = new ShopCardPresenter(cardView, bundle, _purchasingManager);
+                presenter.BundleInfoClicked += OnBundleInfoClicked;
+
                 _cardPresenters.Add(presenter);
             }
         }
 
-        private void HandleInfoRequested(BundleCardPresenter presenter)
-        {
-            OnShowBundleDetail?.Invoke(presenter);
-        }
-
         public void Refresh()
         {
-            foreach (var presenter in _cardPresenters) {
-                presenter.Refresh();
+            foreach (var cardPresenter in _cardPresenters) {
+                cardPresenter.Refresh();
             }
+        }
+
+        private void OnBundleInfoClicked(BundleSo bundleSo)
+        {
+            BundleInfoClicked?.Invoke(bundleSo);
         }
     }
 }
