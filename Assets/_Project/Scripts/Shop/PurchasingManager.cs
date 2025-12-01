@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Shop
 {
-    public class PurchasingManager
+    public class PurchasingManager : IPurchasingManager
     {
         public event Action<BundleSo> PurchaseStarted;
 
@@ -31,7 +31,7 @@ namespace Shop
             IsProcessing = false;
         }
 
-        private void ApplyPurchase(BundleSo bundle)
+        public void ApplyPurchase(BundleSo bundle)
         {
             foreach (var cost in bundle.Costs) {
                 cost.Apply();

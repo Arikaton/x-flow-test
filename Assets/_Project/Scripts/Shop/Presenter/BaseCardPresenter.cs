@@ -7,11 +7,11 @@ namespace Shop
         protected readonly BundleSo Bundle;
 
         private readonly IBundleCardView _view;
-        private readonly PurchasingManager _purchasingManager;
+        private readonly IPurchasingManager _purchasingManager;
 
         private bool _canPurchase;
 
-        protected BaseCardPresenter(IBundleCardView view, BundleSo bundle, PurchasingManager purchasingManager)
+        protected BaseCardPresenter(IBundleCardView view, BundleSo bundle, IPurchasingManager purchasingManager)
         {
             _view = view;
             Bundle = bundle;

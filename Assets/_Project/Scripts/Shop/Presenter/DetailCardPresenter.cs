@@ -10,7 +10,7 @@ namespace Shop
             ShopService shopService,
             IDetailCardView detailCardView,
             BundleSo bundle,
-            PurchasingManager purchasingManager) : base(detailCardView.BundleCardView, bundle, purchasingManager)
+            IPurchasingManager purchasingManager) : base(detailCardView.BundleCardView, bundle, purchasingManager)
         {
             _shopService = shopService;
             detailCardView.BundleCardView.SetInfoVisible(false);

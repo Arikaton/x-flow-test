@@ -7,7 +7,7 @@ namespace Shop
     {
         public event Action<BundleSo> BundleInfoClicked;
 
-        public ShopCardPresenter(IBundleCardView view, BundleSo bundle, PurchasingManager purchasingManager) : base(view, bundle, purchasingManager)
+        public ShopCardPresenter(IBundleCardView view, BundleSo bundle, IPurchasingManager purchasingManager) : base(view, bundle, purchasingManager)
         {
             view.SetInfoVisible(true);
 

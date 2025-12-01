@@ -9,11 +9,11 @@ namespace Shop
         public event Action<BundleSo> BundleInfoClicked;
 
         private readonly IShopView _view;
-        private readonly PurchasingManager _purchasingManager;
+        private readonly IPurchasingManager _purchasingManager;
         private readonly List<BundleSo> _bundles;
         private readonly List<BaseCardPresenter> _cardPresenters = new List<BaseCardPresenter>();
 
-        public ShopPresenter(IShopView view, List<BundleSo> bundles, PurchasingManager purchasingManager)
+        public ShopPresenter(IShopView view, List<BundleSo> bundles, IPurchasingManager purchasingManager)
         {
             _bundles = bundles;
             _view = view;

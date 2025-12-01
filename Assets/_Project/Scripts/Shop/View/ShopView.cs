@@ -1,4 +1,3 @@
-using System;
 using Shop.View;
 using UnityEngine;
 
@@ -6,8 +5,6 @@ namespace Shop.UI
 {
     public class ShopView : MonoBehaviour, IShopView
     {
-        public event Action InfoRequested;
-
         [SerializeField]
         private Transform _cardContainer;
         [SerializeField]

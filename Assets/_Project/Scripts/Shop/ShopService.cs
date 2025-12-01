@@ -13,7 +13,7 @@ namespace Shop
         public static ShopService Instance { get; private set; }
 
         public BundleSo SelectedBundle { get; private set; }
-        public PurchasingManager PurchasingManager => _purchasingManager;
+        public IPurchasingManager PurchasingManager => _purchasingManager;
 
         [SerializeField]
         private ShopConfigSo _shopConfig;
@@ -26,7 +26,7 @@ namespace Shop
         private string _bundleDetailSceneName;
 
         private ShopPresenter _shopPresenter;
-        private PurchasingManager _purchasingManager;
+        private IPurchasingManager _purchasingManager;
 
         private void Awake()
         {
